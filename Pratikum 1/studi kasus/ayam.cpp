@@ -4,7 +4,7 @@
 using namespace std;
  
 int main (){
-	int pil ,kx;
+	int pil ,choice;
 	int total, jmlh;
 	int hargag=17000, hargab=21000;
 	int jmlhb=0, jmlhg=0;
@@ -36,10 +36,10 @@ int main (){
 	cout<<"1). Kembali pilih menu"<<endl;
 	cout<<"2). Keluar dan cetak struk"<<endl;
 	cout<<"======================"<<endl;
-	cout<<"Masukkan pilihan : ";cin>>kx;
+	cout<<"Masukkan pilihan : ";cin>>choice;
 	cout<<"======================"<<endl;
 	}
-	while (kx==1);
+	while (choice==1);
 	total=totalb+totalg;
 	if(total>45000){
 		diskon=total*0.1;
