@@ -21,14 +21,14 @@ main ()
 		cout<<"=============================================="<<endl;
 		if (pil==1){
 			cout<<"\nMasukkan nama barang          = ";
-	        cin.ignore();
-	        getline(cin, nama[i]);
+	        	cin.ignore();
+	        	getline(cin, nama[i]);
 			cout<<"Masukkan jumlah barang        = ";
 			cin>>jmlh[i];
 			cout<<"Masukkan harga satuan barang  = ";
-    		cin>>harga[i];
+    			cin>>harga[i];
 			total[i]=jmlh[i]*harga[i];
-	        i++;
+	        	i++;
 		}
 		else if (pil==2){
 			int Sub=0, after=0;
@@ -62,12 +62,12 @@ main ()
 				cout<<setiosflags(ios::left)<<setw(5)<<harga[j]<<" ";
 				cout<<setiosflags(ios::left)<<setw(15)<<total[j]<<" ";
 				cout<<endl;
-	        }
+	        	}
 			cout<<"--------------------------------------------"<<endl;                                                    
-	        cout<<"              Sub total belanjaan = "<<Sub<<endl;
-	        cout<<"                     Jumlah bayar = "<<bayar<<endl;
-	        cout<<"                        Kembalian = "<<after<<endl;
-	        cout<<"============================================"<<endl;
+	        	cout<<"              Sub total belanjaan = "<<Sub<<endl;
+	        	cout<<"                     Jumlah bayar = "<<bayar<<endl;
+	        	cout<<"                        Kembalian = "<<after<<endl;
+	        	cout<<"============================================"<<endl;
 			system ("PAUSE");
 		}
 		}
