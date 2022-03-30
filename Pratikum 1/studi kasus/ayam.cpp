@@ -4,7 +4,7 @@
 using namespace std;
  
 int main (){
-	int pil ,kx;
+	int pil ,choice;
 	int total, jmlh;
 	int hargag=17000, hargab=21000;
 	int jmlhb=0, jmlhg=0;
@@ -36,10 +36,10 @@ int main (){
 	cout<<"1). Kembali pilih menu"<<endl;
 	cout<<"2). Keluar dan cetak struk"<<endl;
 	cout<<"======================"<<endl;
-	cout<<"Masukkan pilihan : ";cin>>kx;
+	cout<<"Masukkan pilihan : ";cin>>choice;
 	cout<<"======================"<<endl;
 	}
-	while (kx==1);
+	while (choice==1);
 	total=totalb+totalg;
 	if(total>45000){
 		diskon=total*0.1;
@@ -68,25 +68,25 @@ int main (){
 	cout<<"Struk berhasil dibuat....."<<endl;
 	cout<<"================================="<<endl;
 	fstream poin;
-		poin.open("Struk.txt",ios::out | ios::in | ios::trunc );
-		poin<<"================================"<<endl;
-		poin<<"         Struk Pesanan"<<endl;
-		poin<<"---------------------------------"<<endl;
-		poin<<"Deskripsi    QTY  Harga Total"<<endl;
-		poin<<"================================="<<endl;
-		poin<<setiosflags(ios::left)<<setw(13)<<ayamg<<" ";
-		poin<<setiosflags(ios::left)<<setw(3)<<jmlhg<<" ";
-		poin<<setiosflags(ios::left)<<setw(5)<<hargag<<" ";
-		poin<<setiosflags(ios::left)<<setw(5)<<totalg<<" ";
-		poin<<endl;
-		poin<<setiosflags(ios::left)<<setw(13)<<ayamb<<" ";
-		poin<<setiosflags(ios::left)<<setw(3)<<jmlhb<<" ";
-		poin<<setiosflags(ios::left)<<setw(5)<<hargab<<" ";
-		poin<<setiosflags(ios::left)<<setw(5)<<totalb<<" ";
-		poin<<endl;
-		poin<<"---------------------------------"<<endl;
-		poin<<"               Diskon : "<<diskon<<endl;
-		poin<<"           Sub total  : "<<total<<endl;
-		poin<<"================================="<<endl;
+	poin.open("Struk.txt",ios::out | ios::in | ios::trunc );
+	poin<<"================================"<<endl;
+	poin<<"         Struk Pesanan"<<endl;
+	poin<<"---------------------------------"<<endl;
+	poin<<"Deskripsi    QTY  Harga Total"<<endl;
+	poin<<"================================="<<endl;
+	poin<<setiosflags(ios::left)<<setw(13)<<ayamg<<" ";
+	poin<<setiosflags(ios::left)<<setw(3)<<jmlhg<<" ";
+	poin<<setiosflags(ios::left)<<setw(5)<<hargag<<" ";
+	poin<<setiosflags(ios::left)<<setw(5)<<totalg<<" ";
+	poin<<endl;
+	poin<<setiosflags(ios::left)<<setw(13)<<ayamb<<" ";
+	poin<<setiosflags(ios::left)<<setw(3)<<jmlhb<<" ";
+	poin<<setiosflags(ios::left)<<setw(5)<<hargab<<" ";
+	poin<<setiosflags(ios::left)<<setw(5)<<totalb<<" ";
+	poin<<endl;
+	poin<<"---------------------------------"<<endl;
+	poin<<"               Diskon : "<<diskon<<endl;
+	poin<<"           Sub total  : "<<total<<endl;
+	poin<<"================================="<<endl;
         poin.close();
 }
