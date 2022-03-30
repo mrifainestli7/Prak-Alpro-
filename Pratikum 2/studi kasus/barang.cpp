@@ -66,7 +66,7 @@ main ()
 			cout<<"--------------------------------------------"<<endl;                                                    
 	        	cout<<"              Sub total belanjaan = "<<Sub<<endl;
 	        	cout<<"                     Jumlah bayar = "<<bayar<<endl;
-	        	cout<<"                        Kembalian = "<<after<<endl;
+	        	cout<<"                        Kembalian = "<<kembalian<<endl;
 	        	cout<<"============================================"<<endl;
 			system ("PAUSE");
 		}
