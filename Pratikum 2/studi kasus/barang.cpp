@@ -31,7 +31,7 @@ main ()
 	        	i++;
 		}
 		else if (pil==2){
-			int Sub=0, after=0;
+			int Sub=0, kembalian=0;
 			int bayar;
 			system ("CLS");
 			cout<<"--------------------------------------------"<<endl;
@@ -49,7 +49,7 @@ main ()
 			cout<<"--------------------------------------------"<<endl;
 			cout<<"              Sub total belanjaan = "<<Sub<<endl;
 			cout<<"                     Jumlah bayar = ";cin>>bayar;
-			after=bayar-Sub;
+			kembalian=bayar-Sub;
 			system ("CLS");
 			cout<<"============================================"<<endl;
 			cout<<"               Struk Belanjaan      "<<endl;
