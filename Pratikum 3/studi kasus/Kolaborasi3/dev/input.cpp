@@ -5,6 +5,6 @@
 int main(){
 	Input input;
 	input.cetak();
-	input,toFile();
+	input.toFile();
 	return 0;
 }
