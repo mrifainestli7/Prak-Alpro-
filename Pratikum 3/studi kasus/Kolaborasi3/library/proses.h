@@ -39,15 +39,15 @@ class Proses {
 
 	void toFile(){
 
-         	   if (jarak<3){
-         	       ongkir=15000;
-           	   }
-            	   else {
-                	ongkir=25000;
-           	   }
+       	   if (jarak<3){
+       	        ongkir=15000;
+	   }
+       	   else {
+               	ongkir=25000;
+      	   }
 
-		int total = (hrg_aymGr * bnyk_aymGr) + (hrg_aymBk * bnyk_aymBk) + (hrg_aymGp * bnyk_aymGp) + (hrg_udgG * bnyk_udgG) + (hrg_cuG * bnyk_cuG);
-		float t2 = float(total);
+	    int total = (hrg_aymGr * bnyk_aymGr) + (hrg_aymBk * bnyk_aymBk) + (hrg_aymGp * bnyk_aymGp) + (hrg_udgG * bnyk_udgG) + (hrg_cuG * bnyk_cuG);
+	    float t2 = float(total);
 
             if ((total>=25000) && (total<50000)){
                 ongkir=ongkir-3000;
