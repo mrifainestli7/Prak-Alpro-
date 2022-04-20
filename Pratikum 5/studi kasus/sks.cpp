@@ -12,7 +12,7 @@ class sks {
 	string a [20];
 	string nama;
 	int  b[20];
-	int hsks=12000;
+	int hsks;
 	int bykA, i, nim; 	
 	float total,jumlah, diskonsatu, diskondua;
 };
@@ -21,15 +21,15 @@ void sks::input(){
 	cout<<"======================================="<<endl;
 	cout<<"STUDI KASUS 5 : Penginputan SKS "<<endl;
 	cout<<"======================================="<<endl;
-	cout<<"Masukkan banyak Mata Kuliah : ";cin>>bykA;
+	cout<<"Masukkan Banyak Mata Kuliah : ";cin>>bykA;
 	cout<<"---------------------------------------"<<endl;
 	for(i=0; i<bykA; i++){  
-		cout<<"Masukkan Mata kuliah " <<i+1<<" : ";
-		cin.ignore();  
-		getline(cin, a[i]);	
-		cout<<"Masukkan SKS : ";
-		cin>>b[i];
-		cout<<"---------------------------------------"<<endl;
+			cout<<"Masukkan Mata kuliah " <<i+1<<" : ";
+			cin.ignore();  
+			getline(cin, a[i]);	
+			cout<<"Masukkan SKS : ";
+			cin>>b[i];
+			cout<<"---------------------------------------"<<endl;
 	}
 	cout<<"Masukkan Nama : ";
 	cin.ignore();getline(cin, nama);
@@ -37,7 +37,18 @@ void sks::input(){
 	cout<<"======================================="<<endl;
 }
 
-int sks::rekursif(int j, int i){
+void sks::proses() {
+	int j=1;
+	i--;
+  hsks=12000;
+	rekursif(j,i);
+	diskonsatu=total*0.10; //Diskon 10%
+  total=total-diskonsatu;
+	diskondua=total*0.05;  //Diskon 5%
+	total=total-diskondua;
+}
+
+int sks::rekursif(int j, int i){ //implementasi fungsi rekursif
 	if(i<0){
 		return i;
 	}
@@ -46,16 +57,6 @@ int sks::rekursif(int j, int i){
 		total+=hsks*b[i];
 		return rekursif(j,(i-1));
 	}
-}
-
-void sks::proses() {
-	int j=1;
-	i--;
-	rekursif(j,i);
-	diskonsatu=total*0.10;
-	diskondua=total*0.05;
-	total=total-diskonsatu;
-	total=total-diskondua;
 }
 
 void sks::output(){
