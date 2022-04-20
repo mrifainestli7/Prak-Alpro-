@@ -24,12 +24,12 @@ void sks::input(){
 	cout<<"Masukkan banyak Mata Kuliah : ";cin>>bykA;
 	cout<<"---------------------------------------"<<endl;
 	for(i=0; i<bykA; i++){  
-			cout<<"Masukkan Mata kuliah " <<i+1<<" : ";
-			cin.ignore();  
-			getline(cin, a[i]);	
-			cout<<"Masukkan SKS : ";
-			cin>>b[i];
-			cout<<"---------------------------------------"<<endl;
+		cout<<"Masukkan Mata kuliah " <<i+1<<" : ";
+		cin.ignore();  
+		getline(cin, a[i]);	
+		cout<<"Masukkan SKS : ";
+		cin>>b[i];
+		cout<<"---------------------------------------"<<endl;
 	}
 	cout<<"Masukkan Nama : ";
 	cin.ignore();getline(cin, nama);
