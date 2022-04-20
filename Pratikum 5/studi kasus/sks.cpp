@@ -24,9 +24,9 @@ void sks::input(){
 	cout<<"Masukkan Banyak Mata Kuliah : ";cin>>bykA;
 	cout<<"---------------------------------------"<<endl;
 	for(i=0; i<bykA; i++){  
-			cout<<"Masukkan Mata kuliah " <<i+1<<" : ";
-			cin.ignore();  
-			getline(cin, a[i]);	
+	cout<<"Masukkan Mata kuliah " <<i+1<<" : ";
+	cin.ignore();  
+	getline(cin, a[i]);	
 			cout<<"Masukkan SKS : ";
 			cin>>b[i];
 			cout<<"---------------------------------------"<<endl;
