@@ -24,12 +24,12 @@ void sks::input(){
 	cout<<"Masukkan Banyak Mata Kuliah : ";cin>>bykA;
 	cout<<"---------------------------------------"<<endl;
 	for(i=0; i<bykA; i++){  
-	cout<<"Masukkan Mata kuliah " <<i+1<<" : ";
-	cin.ignore();  
-	getline(cin, a[i]);	
-			cout<<"Masukkan SKS : ";
-			cin>>b[i];
-			cout<<"---------------------------------------"<<endl;
+		cout<<"Masukkan Mata kuliah " <<i+1<<" : ";
+		cin.ignore();  
+		getline(cin, a[i]);	
+		cout<<"Masukkan SKS : ";
+		cin>>b[i];
+		cout<<"---------------------------------------"<<endl;
 	}
 	cout<<"Masukkan Nama : ";
 	cin.ignore();getline(cin, nama);
@@ -40,10 +40,10 @@ void sks::input(){
 void sks::proses() {
 	int j=1;
 	i--;
-  hsks=12000;
+ 	hsks=12000;
 	rekursif(j,i);
 	diskonsatu=total*0.10; //Diskon 10%
-  total=total-diskonsatu;
+  	total=total-diskonsatu;
 	diskondua=total*0.05;  //Diskon 5%
 	total=total-diskondua;
 }
