@@ -42,8 +42,8 @@ public:
 	    //algoritma mencari nilai rata-rata
 	    for(int i=0; i<n; i++){
 	    	rata+=nilai[i];
-    	}
-    	rata/=n;
+    	    }
+    	    rata/=n;
     }
     
     void toFile(){
@@ -62,10 +62,10 @@ public:
 
 private:
     ifstream ambil_data;
-	ofstream tulis_data;
+    ofstream tulis_data;
     string nama, matkul;
     int nilai[50];
     int n;
     int Nmin, Nmax;
-	float rata;
+    float rata;
 };
