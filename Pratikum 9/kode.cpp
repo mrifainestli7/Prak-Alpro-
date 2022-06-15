@@ -6,21 +6,21 @@ class kode{
 	public: 
 		void input(){
 			cout<<"================================================"<<endl;
-	  	cout<<"       STUDI KASUS 9 : Array 1 & 2 dimensi "<<endl;
-	  	cout<<"================================================"<<endl;
-	    for (i=0; i<24; i++){
-	  		cout<<"Masukkan kode buku ke-"<<i+1<<" : ";
-	  		cin>>c[i];
-		  }
+	  		cout<<"       STUDI KASUS 9 : Array 1 & 2 dimensi "<<endl;
+	  		cout<<"================================================"<<endl;
+	    		for (i=0; i<24; i++){
+	  			cout<<"Masukkan kode buku ke-"<<i+1<<" : ";
+	  			cin>>c[i];
+			}
 			cout<<endl;
-		}
+			}
 		void proses(){
 			for (i=0; i<24; i++){ //algoritma sorting bubble sort
 				for (j=0; j<24-1; j++){
 					if (c[j] > c[j+1]){
-	      		tukar=c[j];
-	      		c[j]=c[j+1];
-	          c[j+1]=tukar;
+	      					tukar=c[j];
+	      					c[j]=c[j+1];
+	          				c[j+1]=tukar;
 					}
 				}
 			}
@@ -34,17 +34,17 @@ class kode{
 		}
 		void output(){
 			cout<<"========================="<<endl;
-      cout<<"| Kode Buku | Nomor Rak |"<<endl;
-      cout<<"========================="<<endl;
-      cout<<"-------------------------"<<endl;
-      for(i=0; i<4; i++){
-  			for(j=0; j<6; j++){
-	  			cout<<"|    ";
-		  		cout<<setiosflags(ios::left)<<setw(6)<<a[i][j]<<" |     ";
-			  	cout<<setw(6)<<i+1<<"|"<<endl;
-			  }
-			  cout<<"-------------------------"<<endl;
-		  }
+      			cout<<"| Kode Buku | Nomor Rak |"<<endl;
+      			cout<<"========================="<<endl;
+      			cout<<"-------------------------"<<endl;
+      			for(i=0; i<4; i++){
+  				for(j=0; j<6; j++){
+	  				cout<<"|    ";
+		  			cout<<setiosflags(ios::left)<<setw(6)<<a[i][j]<<" |     ";
+			  		cout<<setw(6)<<i+1<<"|"<<endl;
+			  	}
+				cout<<"-------------------------"<<endl;
+		  	}
 			cout<<"========================="<<endl;
 		}
 	private:
