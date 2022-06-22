@@ -13,7 +13,7 @@ class prosedur{
 	public:
 		node *pertama, *kedua, *ketiga, *keempat, *kelima;
 		void input(){
-        cout<<"======================================="<<endl;
+        	cout<<"======================================="<<endl;
 	    	cout<<"      STUDI KASUS 10 : Pointer "<<endl;
 	    	cout<<"======================================="<<endl;
    			pertama = new node;
